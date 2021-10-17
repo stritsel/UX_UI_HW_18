@@ -1,0 +1,272 @@
+/* header and footer*/
+.header {
+    height: 30px;
+    background-color:white;
+    border: solid 0px;
+    border-color: black;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:600;
+}
+
+.footer {
+  height: 30px;
+  background-color:white;
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  align-items: center;
+  font-weight:600;
+  width: 100vw;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+.inline-block {
+    display: inline-block;
+  }
+
+.sticky-bottom {
+    position: absolute;
+    bottom: 0px;
+  }
+
+
+/* nav items */
+  .navitem {
+  }
+  .navlink {
+  }
+
+/* text layout*/
+.fontmargin20 {
+    margin-left:  20px;
+  }
+.font {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+.fontsize-default {
+    font-size: 18px;
+}
+.fontsize-H1 {
+  font-size: 70px;
+}
+.fontsize-H2 {
+  font-size: 24px;
+}
+.fontsize-L1 {
+  font-size: 14px;
+  font-style:inherit;
+}
+.fontsize-P {
+  font-size: 13px;
+  font-weight:300;
+}
+.font-italic{
+  font-style: italic;
+  font-weight: 100;
+}
+
+.fontweight-bold {
+}
+
+.fontweight-regular {
+}
+
+.color-grey {
+  color: grey;
+}
+
+.color-white {
+  color: white;
+}
+
+/*background colors*/
+.background-blue {  
+  background-image: linear-gradient(#0B2F94, #030F58);
+}
+.background-yellow {  
+  background-image: linear-gradient(#F4F36A, #F6A95A);
+  height: 90vh;
+}
+
+/* button */
+.button {
+  border-radius: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 14px;
+  font:'Inter', sans-serif;
+}
+
+/* hero section */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  gap: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+.heroimages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items:flex-end;
+
+}
+.hero1 {
+  width: 80%;
+  height: auto;
+  margin-bottom: 30%;
+}
+.hero2 {
+  width: 75%;
+  height:auto;
+}
+.hero3 {
+  width: 75%;
+  height: auto;
+  margin-bottom: 30%;
+}
+.hero4 { 
+  width: 95%;
+  height: auto;
+  margin-bottom: 30%;
+}
+.hero5 {
+  width: 80%;
+  height: auto;
+  margin-bottom: 30%;
+}
+
+/* work*/
+.objects {
+  display: grid;
+  grid-template-columns: 8fr 2.5fr 1.5fr;
+  gap: 30px;
+  padding: 5px;
+  border: solid 1px;
+  padding-left: 50px;
+  margin-top: -1px;
+}
+
+.work-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.title {
+  display: flex;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
+
+/* skills*/
+.skills-layout {
+  display: flex;
+  align-items: center;
+}
+
+.skills-grid{
+  display: grid;
+  grid-template-rows: repeat(20, 30px);
+  grid-template-columns: 3fr 3fr 6fr;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+/* about page */
+.about {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  gap: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+/* responsive design */
+@media only screen and (max-width: 600px){
+  .about {  
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-right: 300px;
+  }
+
+  .header {
+   display: none;
+  }
+
+  .footer {
+    display: none;
+   }
+
+  .header-mobile{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+   
+   .footer-mobile{
+    display:flex;
+    align-items: center;
+    height: 30px;
+   }
+
+   .work {  
+    display: none;
+     }
+
+  .hero {  
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(#E877C9, #B94740);
+    padding-left: 30px;
+    padding-right: 300px;
+  }
+
+  .heroNoDisplay {  
+    display: none;
+     }
+
+  .skills {  
+    grid-template-columns: 1fr;
+    background-color: pink;
+    padding-left: 30px;
+    padding-right: 300px;
+  }
+
+}
